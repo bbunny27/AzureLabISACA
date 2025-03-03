@@ -1,5 +1,5 @@
 # Azure CLI
-To access cloud shell, go to portal.azure.com -> Log in -> Click on the button in the top left that looks like a terminal symbol. 
+To access cloud shell, go to portal.azure.com -> Log in -> Click on the button in the top right that looks like a terminal symbol. 
 <br>
 ![image](https://github.com/user-attachments/assets/3081f6cc-6d46-4862-871c-8731d4cda3f6)
 ### Creating a Resource Group
