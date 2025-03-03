@@ -46,19 +46,11 @@ az network vnet subnet list -g rg-lab --vnet-name vnet-hub -o table
 ```bash
 az vm delete --resource-group rg-lab --name vnet-hub-vm1 --yes
 ```
-2. Deleting Virtual Networks.
-```bash
-az network vnet delete --resource-group rg-lab --name vnet-hub
-```
-3. Deleting NSG's.
-```bash
-az network nsg delete --resource-group rg-lab --name nsg-hub
-```
-4. Delete the Resource Group. This removes all resource inside of it.
+2. Delete the Resource Group. This removes all resource inside of it.
 ```bash
 az group delete --name rg-lab --yes --no-wait
 ```
-5. Delete the NetworkWatcher resource group.
+3. Delete the NetworkWatcher resource group.
 ```bash
 az group delete --name NetworkWatcherRG --yes --no-wait
 ```
