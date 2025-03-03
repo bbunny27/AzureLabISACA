@@ -32,7 +32,7 @@ az network vnet subnet update -g rg-lab -n vnet-hub-subnet1 --vnet-name vnet-hub
 ### Create a Virtual Machine
 
 ```bash
-az vm create --resource-group rg-lab --name vnet-hub-vm1 --image UbuntuLTS --vnet-name vnet-hub --subnet vnet-hub-subnet1 --admin-username azureuser --admin-password Azure123456!
+az vm create --resource-group rg-lab --name vnet-hub-vm1 --image Ubuntu2204 --vnet-name vnet-hub --subnet vnet-hub-subnet1 --admin-username azureuser --admin-password Azure123456!
 ```
 
 ```bash
