@@ -34,3 +34,22 @@ az vm create --resource-group rg-lab --name vnet-hub-vm1 --image UbuntuLTS --vne
 ```bash
 az network vnet subnet list -g rg-lab --vnet-name vnet-hub -o table
 ```
+
+### Tearing Down the Resources.
+1. Deleting VM's
+```bash
+az vm delete --resource-group rg-lab --name vnet-hub-vm1 --yes
+```
+2. Deleting NSG's.
+```bash
+az network nsg delete --resource-group rg-lab --name nsg-hub
+```
+3. Deleting Virtual Networks.
+```bash
+az network vnet delete --resource-group rg-lab --name vnet-hub
+```
+4. Delete the Resource Group. This removes all resource inside of it.
+```bash
+az group delete --name rg-lab --yes --no-wait
+```
+These command will ensure a clean removal of all resources. Please double check on your portal to ensure that everything is deleted. ISACA is not resposible for any charges you may incur by leaving services enabled.
