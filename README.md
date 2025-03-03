@@ -1,4 +1,8 @@
 # Azure CLI
+### Creating a Resource Group
+```bash
+az group create --name rg-lab --location westus2
+```
 
 ### Creating a Virtual Network 
 
